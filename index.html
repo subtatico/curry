@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Foto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="card" id="uploadScreen">
+      <div class="logo">📸</div>
+
+      <h1>CRIE SUA FOTO</h1>
+
+      <p>
+        Envie uma foto para criar sua montagem.
+      </p>
+
+      <label class="upload">
+        <span>ESCOLHER FOTO</span>
+        <input type="file" id="photoInput" accept="image/*">
+      </label>
+
+      <img id="preview" class="preview hidden">
+
+      <button id="generateBtn" class="button hidden">
+        GERAR FOTO
+      </button>
+    </section>
+
+
+    <section class="card hidden" id="loadingScreen">
+
+      <div class="loader"></div>
+
+      <h1>GERANDO SUA FOTO...</h1>
+
+      <p>
+        Aguarde enquanto sua imagem é processada.
+      </p>
+
+    </section>
+
+
+    <section class="card hidden" id="resultScreen">
+
+      <h1>SUA FOTO ESTÁ PRONTA</h1>
+
+      <div class="result">
+        <img id="resultImage">
+      </div>
+
+      <small>
+        IMAGEM GERADA POR INTELIGÊNCIA ARTIFICIAL
+      </small>
+
+      <div class="buttons">
+
+        <button id="downloadBtn" class="button">
+          ⬇️ BAIXAR IMAGEM
+        </button>
+
+        <button id="shareBtn" class="button secondary">
+          📤 COMPARTILHAR
+        </button>
+
+        <button id="againBtn" class="button secondary">
+          🔄 GERAR OUTRA
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
